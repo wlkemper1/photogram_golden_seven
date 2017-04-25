@@ -1,0 +1,29 @@
+
+
+<h1>All Photos</h1>
+
+<a href="">Add a new photo</a>
+
+<% @all_photos.each do |the_photo|  %>
+  <div>
+    <img src="<%= the_photo.source %>">
+
+    <a href="/photos/<%= the_photo.id %>">Show Details</a>
+    <a href="#">Edit</a>
+    <a href="#">Delete</a>
+  </div>
+
+<% end %>
+
+<br>
+
+
+<a href="">Add a new photo</a><br>
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Nasir-al_molk_-1.jpg/620px-Nasir-al_molk_-1.jpg">
+
+<br>
+<a href="#">Show Details</a>
+<a href="#">Edit</a>
+<a href="#">Delete</a>
